@@ -57,26 +57,19 @@ async def welcome(message):
 @dp.message_handler(content_types=['text'])
 async def lalala(message):
     if message.text == 'Портфолио':
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img.png', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img1.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img2.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img3.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img4.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img5.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img6.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img7.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img8.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img9.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img10.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img11.jpg', 'rb'))
-        await bot.send_photo(chat_id=message.chat.id, photo=open('/Bot/image/img12.jpg', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('', 'rb'))
+            
 
     elif message.text == 'Посмотреть видео':
         await message.answer('Секундочку, загружаю...')
         await bot.send_video(chat_id=message.chat.id,
-                             video=open('/Bot/image/WhatsApp Video 2022-12-04 at 02.34.49.mp4', 'rb'))
+                             video=open('', 'rb'))
         await bot.send_video(chat_id=message.chat.id,
-                             video=open('/Bot/image/WhatsApp Video 2022-12-04 at 02.34.49 (1).mp4', 'rb'))
+                             video=open('', 'rb'))
     elif message.text == 'Отзывы':
         await message.answer('Наши отзывы:\n https://profi.ru/profile/SchurovOE/#reviews-tab')
     elif message.text == 'Заказать Деда Мороза':
